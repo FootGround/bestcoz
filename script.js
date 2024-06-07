@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Fetch quiz data from Google Sheets
     async function fetchQuizData() {
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Sheet1?key=${apiKey}`;
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/content?key=${apiKey}`;
         const response = await fetch(url);
         const data = await response.json();
         return data.values;
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Fetch educational content from Google Sheets
     async function fetchContentData() {
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Sheet2?key=${apiKey}`;
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/structure?key=${apiKey}`;
         const response = await fetch(url);
         const data = await response.json();
         return data.values;
