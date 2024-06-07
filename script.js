@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const sheetId = 'https://docs.google.com/spreadsheets/d/1A_mwroK537YHoLzs4LCqlBHulvN_hjUi-v27MFB2dEA/edit?usp=sharing';
+    const sheetId = '1A_mwroK537YHoLzs4LCqlBHulvN_hjUi-v27MFB2dEA/edit?usp=sharing';
     const apiKey = 'AIzaSyCnvZYPcxgbu4npR21eq2dAUB-_mZEiuus';
     
     // Fetch quiz data from Google Sheets
